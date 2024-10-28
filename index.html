@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Windows 11</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="wallpaper">
+        <div class="desktop">
+            <div class="readme" id="readme">
+                <div class="top"> Readme (Notepad)</div>
+                <div class="close" onclick="showRM()">&times;</div>
+                <pre style="padding: 5px;">This is just a design of the Windows 11 UI. 
+As it's still in development, only this file is functional.</pre>
+            </div>
+            <div class="recycle" id="recycle">
+                <div class="top">Recycle Bin</div>
+                <div class="close" onclick="showRB()">&times;</div>
+                <pre style="padding: 5px;">Nothing to see...</pre>
+            </div>
+            <!-- <img src="images/desktop/thisPC.png"> -->
+            <img src="images/desktop/recycleBin.png" onclick="showRB()">
+            <label>Recycle Bin</label>
+            <img src="images/desktop/controlPanel.png">
+            <label>Control Panel</label>
+            <img src="images/desktop/readme.png" onclick="showRM()">
+            <label>Readme.txt</label>
+        </div>
+
+        <div class="icon-container">
+            <i class="fa-solid fa-chevron-up sui"></i>
+            <i class="fa-solid fa-wifi sui"></i>
+            <i class="fa-solid fa-volume-high sui"></i>
+            <i class="fa-solid fa-battery-three-quarters sui"></i>
+            <span class="clock">
+                <span id="hrs">00</span>
+                <span>:</span>
+                <span id="mins">00</span>
+            </span>
+            <i class="fa-solid fa-bell"></i>
+        </div>
+    
+         
+
+        <div class="taskbar">
+            <div class="taskbar-container">
+                <img class="apps" src="images/windows.png" height="20px">
+                <img class="apps" src="images/search.png">
+                <img class="apps" src="images/store.png">
+                <img class="apps" src="images/edge.png">
+                <img class="apps" src="images/files.png">
+            </div>
+            
+        </div>
+    </div>
+    <div class="content-right">
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
